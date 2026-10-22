@@ -1,7 +1,7 @@
 # Nvidia サポート
 バージョン `24.11.1` から、Nyarch Linux は再び **NVIDIA用の独自ドライバ** を備えた Nyarch バージョンをサポートしています。
 
-**Note:** Nvidia バージョンは RTX5000 GPU をサポートしていません。通常の ISO に `nvidia-open` ドライバを [manually](install_nvidia_drivers.md) でインストールする必要があります。
+**Note:** Nvidia バージョンは RTX5000 GPU をサポートしていません。通常の ISO に `nvidia-open` ドライバを [手動](install_nvidia_drivers.md) でインストールする必要があります。
 
 ハイブリッドグラフィックスを管理するために、[envycontrol](https://github.com/bayasdev/envycontrol) をインストールし、Gnome のシンプルなトグルスイッチで管理します。
 
