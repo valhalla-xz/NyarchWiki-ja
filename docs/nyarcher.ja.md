@@ -39,9 +39,10 @@ sudo pip3 install pywal
 
 スクリプトが何をするか知りたい場合は、[NYARCHER.md](https://github.com/NyarchLinux/Nyarcher/blob/main/NYARCHER.md) ファイルをご覧ください。
 
-<br />
+<br/>
 ※このスクリプトは、上書きする前にほとんどの既存設定をバックアップし、/usr/bin/nyaofetch および /usr/bin/nekofetch ファイルを除外し、現在のユーザーの設定のみを編集します。
-<br />
+<br/>
+
 `nyarcher.sh` をダウンロードし、実行権限を追加してから実行してください。
 
 ```bash
