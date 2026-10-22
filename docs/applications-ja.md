@@ -107,54 +107,54 @@ Flatseal を使用して、Flatpak の権限を管理できます。
 
 他に利用可能なパッケージング形式がある場合、一般的にappimagesの使用は推奨されません。
 **代替手段がない場合にのみ**、appimages を使用してください。
-### Installing and managing Appimages
-After downloading an appimage, you can double-click on it and it will launch **GearLever**.
+### Appimages のインストールと管理
+Appimage をダウンロードした後、ダブルクリックすると **GearLever** が起動します。
 
-GearLever is a simple software that helps you install and uninstall appimages. 
-You can choose to run the appimage once without installing or add it to the app menu.
+GearLeverは、appimagesのインストールとアンインストールを支援するシンプルなソフトウェアです。
+Appimage をインストールせずに一度だけ実行するか、アプリメニューに追加することができます。
 
-#### Running appimages from command line
-You can also straight up run an appimage from the command line by:
-1. Giving it the permission to be executed
+#### コマンドラインから appimages を実行する
+コマンドラインから直接 appimage を実行することもできます。
+1. 実行の許可を与える
 ```bash
 chmod +x application.appimage
 ```
-2. Running it
+2. 実行する
 ```bash
 ./application.appimage
 ```
 
 ## Arch User Repository
-The [AUR](https://aur.archlinux.org/ ) (Arch User Repository) is a big community-driven store for packages that aren't officially supported by Arch Linux. **If an application exists, it's very likely that you will find it in the AUR.**
+[AUR](https://aur.archlinux.org/) (Arch User Repository) は、Arch Linux が公式にサポートしていないパッケージ向けの大規模なコミュニティ主導ストアです。**アプリケーションが存在する場合、AURで見つかる可能性が非常に高いです。**
 
-Nyarch Linux is fully compatible with the AUR, since it uses default Arch Linux repositories.
+Nyarch Linux は、デフォルトの Arch Linux リポジトリを使用しているため、AUR と完全に互換性があります。
 
-**Warning**: The packages on the AUR are uploaded by users, so they might not be safe. It's suggested to always check if they are trustable from the package builds.
+**警告**:AUR のパッケージはユーザーによってアップロードされているため、安全ではない可能性があります。パッケージビルドからそれらが信頼できるかどうか、常に確認することが推奨されます。
 
-### Installing a package
-To install an AUR package, you need an [AUR Helper](https://wiki.archlinux.org/title/AUR_helpers ).
+### AUR を使用したパッケージのインストール
+AUR パッケージをインストールするには、[AUR Helper](https://wiki.archlinux.org/title/AUR_helpers) が必要です。
 
-By default, Nyarch Linux ships `yay` as the default AUR helper. (Or `nyay` because lol nya)
-
-To install an AUR package, you can run
+デフォルトでは、Nyarch Linux は `yay` をデフォルトの AUR ヘルパーとして提供します。(または、`nyay` も使えるよ、笑)
+AURパッケージをインストールするには、このようにします。
 ```bash
 yay -S package
 ```
-For example,
+例として:
 ```bash
 yay -S zen-browser-bin
 ```
 
-##### Updating packages
+##### パッケージの更新
 ```bash
 yay
 ```
-Updates all packages from the AUR
+AURからすべてのパッケージを更新します
 
-### Using paru
-`paru` is a feature-rich AUR helper written in Rust, the successor to `yay`, providing safer defaults and more active maintenance.
+### Paru を使用
 
-To install `paru`, you can run:
+`paru` は、Rust で実装された機能豊富な AUR ヘルパーで、`yay` の後継であり、より安全なデフォルト設定とより積極的なメンテナンスを提供します。
+
+`paru` をインストールするには、次のように実行します:
 ```bash
 sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/paru.git 
@@ -162,19 +162,19 @@ cd paru
 makepkg -si
 ```
 
-##### Installing packages with paru
-`paru` uses syntax similar to `pacman`, making it easy to pick up.
+##### Paru を使用したパッケージのインストール
+`paru` は `pacman` に似た構文を使用しており、簡単に取得することができます。
 
-To install an AUR package, you can run:
+AUR パッケージをインストールするには、次のように実行します:
 ```bash
 paru -S package
 ```
-For example,
+例として:
 ```bash
 paru -S chrome
 ```
 
-##### Updating packages
+##### パッケージの更新
 ```bash
 paru
 ```
@@ -182,23 +182,21 @@ or
 ```bash
 paru -Syu
 ```
-This updates all packages from both official repositories and the AUR.
+これは、公式リポジトリとAURの両方からすべてのパッケージを更新します。
 
-##### paru tips
-- **Exit review**: Press q to exit during review
-- **View PKGBUILD**: `paru -Gp package` lets you view the package build script before installation
-- **View AUR comments**: `paru -Gc package` lets you view comments from other users about the package
-- **Interactive search**: Running `paru searchterm` directly lets you search interactively and select for installation
-- **Skip review**: `paru -S package --skipreview` (not recommended for untrusted packages)
-
-### Guide to Package names
-You might encounter multiple packages for the same program. This is an example for Vesktop:
+##### paruのヒント
+- **レビューを終了**: レビュー中に終了するには q を押してください
+- **PKGBUILDの表示**: `paru -Gp package` は、インストール前にパッケージビルドスクリプトを表示できます
+- **View AUR comments**: `paru -Gc package` は、パッケージに関する他のユーザーのコメントを表示できます
+- **インタラクティブ検索**: `paru searchterm` を直接実行すると、インタラクティブに検索でき、インストールを選択できます
+- **レビューのスキップ**: `paru -S package --skipreview`（信頼できないパッケージには推奨されません）
+### パッケージ名ガイド
+同じプログラムに対して複数のパッケージに遭遇する可能性があります。これはVesktopの例です:
 ![immagine](https://github.com/user-attachments/assets/e38667d5-a46a-4d39-8205-ad3ee276d90b )
 
-Based on the suffix:
+サフィックスについて：
+- `-git`: このパッケージは、Gitリポジトリの最新コードからビルドされています。安定しているわけではありませんが、最新の機能やアップデートをご利用いただけます。また、それは**パッケージをコンパイルします**
+- `-bin`: このパッケージはバイナリパッケージであり、**コンパイル済み**で、すぐに使用できる状態です。ソースから構築する必要はありません
+- サフィックスがない場合、通常はパッケージが「リリース」バージョンであることを意味します。言い換えれば、これはソフトウェアの最新の安定版であり、サフィックスやプレフィックスはありません。
 
-- `-git`: This package is built from the latest code in the Git repository. It might not be stable, but you'll get the latest features and updates. Also, it will **compile the package**
-
-- `-bin`: This package is a binary package, which means it's **pre-compiled** and ready to use. You don't need to build it from source
-- If there's no suffix, it usually means that the package is the "release" version. In other words, it's the latest stable version of the software, without any suffixes or prefixes.
 ```
