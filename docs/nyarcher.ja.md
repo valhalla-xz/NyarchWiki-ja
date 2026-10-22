@@ -1,61 +1,72 @@
 # Nyarcher
-Nyarcher is a Shell script to install [Nyarch Linux](https://github.com/NyarchLinux/NyarchLinux) customizations on many Linux Distributions
+Nyarcher は、多くのLinuxディストリビューションで[Nyarch Linux](https://github.com/NyarchLinux/NyarchLinux)のカスタマイズをインストールするためのシェルスクリプトです。
 
-## Disclaimer
-The script aims to give the most similar experience to Nyarch Linux on any Linux distribution, without editing system files. For these reasons, read the [What you are missing section](#what-you-are-missing).
-Also, some applications, specially Nyarch Scripts, might not work correctly in non arch based distributions.
-The only opeartions that are going to edit system files, are flagged with [SYSTEM]. They are not dangerous, but you better know that they are doing.
-If something goes wrong, by creating a new user on your distribution, you won't be affected by the changes that the script does, excluding the changes made by part of the script flagged as [SYSTEM].
-## Install pre-requirements
-**On any distribution, a working installation of Gnome 47 is needed**
+## 免責条項
 
-### Arch-based distributions
+このスクリプトは、システムファイルを編集することなく、あらゆる Linux ディストリビューション上で Nyarch Linux に最も類似した体験を提供することを目指しています。これらの理由から、[欠けている箇所](#欠けているもの)をご覧ください。
+
+また、特に Nyarch Scripts の一部のアプリケーションは、非 Arch ベースのディストリビューションでは正しく動作しない可能性があります。
+
+システムファイルを編集する唯一の操作は、[SYSTEM]でフラグが付けられています。彼らは危険ではありませんが、彼らがやっていることはご存知ください。
+
+何か問題が発生した場合、ディストリビューションに新しいユーザーを作成すれば、スクリプトが行う変更（[SYSTEM] とフラグ付けされたスクリプトの一部による変更を除く）の影響を受けません。
+
+## 事前依存関係をインストールする
+
+どのディストリビューションでも、Gnome 47 の稼働インストールが必要です。
+
+### Archベースのディストリビューション
 ```bash
 sudo pacman -S curl python-pip flatpak gnome-menus kitty wget git fastfetch npm nodejs pacman-contrib gnome-menus gnome-shell-extensions tar
 sudo pacman -S python-pywal
 ```
-It is also suggested to install `webapp-manager` and `gnome-terminal-transparency` from the AUR.
+AUR から `webapp-manager` と `gnome-terminal-transparency` をインストールすることも推奨されています。
 
-### Fedora based distributions
+### Fedoraベースのディストリビューション
 ```bash
 sudo dnf install curl flatpak python3-pip svn gnome-menus kitty wget git neofetch npm nodejs btop gnome-menus gnome-extensions-app
 sudo pip3 install pywal
 sudo cp /usr/local/bin/wal /usr/bin/wal
 ```
-NOTE: wal needs to be in /usr/bin/wal, this is the reason of the last command
-### Ubuntu based distributions
+
+注意：wal は /usr/bin/wal に含める必要があります。これは最後のコマンドの理由です。
+### Ubuntuベースのディストリビューション
 ```bash
 sudo apt install curl python3-pip flatpak subversion gnome-menus kitty wget git neofetch npm nodejs btop gnome-menus gnome-shell-extension-prefs
 sudo pip3 install pywal
 ```
-## Running the script 
-If you want to learn what the script does, you can read [NYARCHER.md](https://github.com/NyarchLinux/Nyarcher/blob/main/NYARCHER.md) file.
+## スクリプトを実行しています
+
+スクリプトが何をするか知りたい場合は、[NYARCHER.md](https://github.com/NyarchLinux/Nyarcher/blob/main/NYARCHER.md) ファイルをご覧ください。
+
 <br />
-**NOTE: The script back-ups most of the existing configuration before overwriting them, also, excluding /usr/bin/nyaofetch and /usr/bin/nekofetch files, it only edits settings for the current user**
+※このスクリプトは、上書きする前にほとんどの既存設定をバックアップし、/usr/bin/nyaofetch および /usr/bin/nekofetch ファイルを除外し、現在のユーザーの設定のみを編集します。
 <br />
-Download `nyarcher.sh` and add the permission of execution, then execute it
+`nyarcher.sh` をダウンロードし、実行権限を追加してから実行してください。
 ```bash
 git clone https://github.com/NyarchLinux/Nyarcher.git
 cd Nyarcher
 chmod +x nyarcher.sh
 ./nyarcher.sh
 ```
-The script will ask you if you want to apply some settings, it is **strongly suggested to say yes to everything** in order to have a stable experience.
+スクリプトは、設定を適用したいかどうかを尋ねます。安定した体験を得るために、**すべてに「はい」と答えることを強く推奨します**。
 
-## What you are missing
-By running this script, you are not going to have the full Nyarch experience, here are the things that are missing from the script, but are present in the distro.
+## 欠けているもの
+このスクリプトを実行しても、Nyarch の完全な体験は提供されません。スクリプトに欠けている点はありますが、ディストロには存在します。
 
-Note that almost any of those things can be integrated in any distribution, by running some commands or editing a few files.
+ほとんどすべてのものは、いくつかのコマンドを実行したり、いくつかのファイルを編集することで、任意のディストリビューションに統合できることに注意してください。
 
-- gnome-terminal-transparency is not installed by the script, it is a version of Gnome Terminal that implements transparency. Fedora users have it by default. You can install it from the [AUR](https://aur.archlinux.org/packages/gnome-terminal-transparency)
-- Webapp manager is not installed by default, you can install it from the [AUR](https://aur.archlinux.org/packages/webapp-manager)
-- plymouth (boot animation) is not installed by this script, and neither its theme. Plymouth installation is very distro-specific, [here is the wiki page for Arch Linux](https://wiki.archlinux.org/title/plymouth). The theme used by us is [here](https://github.com/NyarchLinux/NyarchLinux/tree/main/Gnome/usr/share/plymouth/themes)
-- The breeze to install Nyarch on your bare metal hoping it won't destroy your pc
-- Calamares installation: Only available in the live ISO. It is an almost standard Calamares with adwaita qt theme, you can find here the [slides](https://github.com/NyarchLinux/NyarchLinux/tree/main/Gnome/etc/calamares/branding/ezarcher) that are shown during installation.
-- `yay`, installed by the script, they are AUR helpers, you can install it with another AUR helper. Yay is also aliased as `nyay` because lol
-- You will get some expected bugs that are not experienced on Nyarch:
-  - Pywal theming is not going to be generated by default, to fix this, reload the theme (changing color theming from Nyarch Customize or just change the wallpaper if you have material you enabled) 
-  - You have to log out and log in again after running the script
-  - Nyarch Tour won't start after you log back in, just run it yourself
-  - Nyarch updater is very likely to not work correctly
-  - Material You might not be able to apply Material You Gnome Shell theme automatically without logging in/out on some distros (encountered in Fedora). An easy fix has not been found yet. A workaraund without logging out is to change Gnome shell theme on gnome tweaks (or in extension settings) to another and turning back to Material You theme 
+- gnome-terminal-transparency はスクリプトによってインストールされていません。これは、透明性を実装した Gnome Terminal のバージョンです。Fedora ユーザーはデフォルトでそれを持っています。AUR（https://aur.archlinux.org/packages/gnome-terminal-transparency）からインストールできます。
+- Webapp manager はデフォルトではインストールされていません。[AUR](https://aur.archlinux.org/packages/webapp-manager) からインストールできます。
+- plymouth（ブートアニメーション）はこのスクリプトでも、そのテーマでもインストールされていません。Plymouth のインストールは非常にディストリビューション固有です。[Arch LinuxのWikiページ](https://wiki.archlinux.org/title/plymouth)
+- 私たちが使用しているテーマは[こちら](https://github.com/NyarchLinux/NyarchLinux/tree/main/Gnome/usr/share/plymouth/themes)です。
+- 裸の金属にNyarchを取り付けて、PCを壊さないことを願っています。
+- Calamares のインストール: ライブ ISO でのみ利用可能です。これはほぼ標準的な Calamares で、adwaita の Qt テーマです。インストール時に表示されるスライドは、[こちら](https://github.com/NyarchLinux/NyarchLinux/tree/main/Gnome/etc/calamares/branding/ezarcher)でご確認いただけます。
+
+- `yay`、スクリプトによってインストールされ、AURヘルパーです。別のAURヘルパーでインストールできます。Yay は `nyay` とエイリアスされているんだ、笑
+- Nyarchでは経験されない予期されるバグがいくつか発生します：
+ - Pywal テーマはデフォルトでは生成されません。これを修正するには、テーマを再読み込みしてください（Nyarch Customize からカラーテーマを変更するか、設定済みのマテリアルがある場合は壁紙を変更してください）。
+　- スクリプトを実行した後、ログアウトしてから再度ログインしてください。
+　- Nyarch Tourは再度ログインすると起動しませんので、ご自身で実行してください。
+　- Nyarch アップデータが正しく動作しない可能性が非常に高いです。
+　- Material You は、Fedoraなどの一部ディストロで遭遇した問題で、ログイン/ログアウトせずに自動的に Material You Gnome Shell テーマを適用できない可能性があります。簡単な解決策はまだ見つかっていません。ログアウトせずに作業する作業は、gnome tweaks（または拡張機能の設定）で Gnome シェルのテーマを別のものに変更し、Material You テーマに戻すことです。
