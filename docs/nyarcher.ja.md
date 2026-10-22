@@ -59,7 +59,7 @@ chmod +x nyarcher.sh
 
 ほとんどすべてのものは、いくつかのコマンドを実行したり、いくつかのファイルを編集することで、任意のディストリビューションに統合できることに注意してください。
 
-- gnome-terminal-transparency はスクリプトによってインストールされていません。これは、透明性を実装した Gnome Terminal のバージョンです。Fedora ユーザーはデフォルトでそれを持っています。[AUR]（https://aur.archlinux.org/packages/gnome-terminal-transparency）からインストールできます。
+- gnome-terminal-transparency はスクリプトによってインストールされていません。これは、透明性を実装した Gnome Terminal のバージョンです。Fedora ユーザーはデフォルトでそれを持っています。[AUR](https://aur.archlinux.org/packages/gnome-terminal-transparency)からインストールできます。
 - Webapp manager はデフォルトではインストールされていません。[AUR](https://aur.archlinux.org/packages/webapp-manager) からインストールできます。
 - plymouth（ブートアニメーション）はこのスクリプトでも、そのテーマでもインストールされていません。Plymouth のインストールは非常にディストリビューション固有です。[Arch LinuxのWikiページ](https://wiki.archlinux.org/title/plymouth)
 - 私たちが使用しているテーマは[こちら](https://github.com/NyarchLinux/NyarchLinux/tree/main/Gnome/usr/share/plymouth/themes)です。
