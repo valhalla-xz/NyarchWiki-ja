@@ -1,52 +1,50 @@
-# Install Nvidia Drivers
+# Nvidiaドライバーのインストール
 
-Starting from version `24.11.1`, Nyarch Linux supports again a Nyarch version with **nvidia proprietary drivers preinstalled**.
+バージョン `24.11.1` から、Nyarch Linux は再び **NVIDIAの独自ドライバー** を備えた Nyarch バージョンをサポートしています。
 
-However, if you have not installed the Nvidia version, or you have a not supported Nvidia GPU, you might have to install the drivers manually, and this guide is for you.
+ただし、Nvidiaバージョンをインストールしていない場合、またはサポートされていないNvidia GPUをお持ちの場合は、ドライバーを手動でインストールする必要があるかもしれません。このガイドはご参考ください。
 
-## Installation
+## インストール
 
-You will need to have the multilib repository enabled. To do so, open `/etc/pacman.conf` with your favorite text editor and uncomment the following lines:
-
+マルチリブリポジトリを有効にする必要があります。そのためには、お好きなテキストエディタで `/etc/pacman.conf` を開き、以下の行のコメントを解除してください。
 ```bash
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
 
-Then, update the repositories, and your system:
+次に、リポジトリとシステムを更新してください。
 
 ```bash
 sudo pacman -Syu
 ```
 
-Now, you can install the requirements:
+これで、要求されるパッケージをインストールできます。
 
 ```bash
 sudo pacman -S base-devel linux-headers git nano --needed
 ```
 
-For an average user with a modern gpu, simply install the `nvidia` package:
+最新のGPUを使用している平均的なユーザーは、単に `nvidia` パッケージをインストールしてください。
 
 ```bash
 sudo pacman -S nvidia nvidia-utils
 ```
 
-However, if you have an older GPU, please refer to the [Arch Wiki guide](https://wiki.archlinux.org/title/NVIDIA).
+ただし、古いGPUをお持ちの場合は、[Arch Wiki guide](https://wiki.archlinux.org/title/NVIDIA)をご参照ください。
 
-## Configuration
+## 設定
 
-If you are a fellow old Windows user, you may know the Nvidia Control Panel. In Linux, we have `nvidia-settings`, which is a graphical tool to configure your Nvidia GPU.
+もし同じ古いWindowsユーザーであれば、Nvidiaコントロールパネルをご存知かもしれません。Linux では、`nvidia-settings` があり、これは Nvidia GPU を構成するためのグラフィカルツールです。
 
-To install it, simply run:
+インストールするには、これを実行します。
 
 ```bash
 sudo pacman -S nvidia-settings
 ```
 
-Then, you can run it from the terminal or from the application menu.
+その後、ターミナルまたはアプリケーションメニューから実行できます。
 
-If you want to configure xorg with nvidia's automatic configuration, simply run the following command:
-
+Nvidia の自動設定で xorg を構成したい場合は、以下のコマンドを実行してください。
 ```bash
 sudo nvidia-xconfig
 ```
