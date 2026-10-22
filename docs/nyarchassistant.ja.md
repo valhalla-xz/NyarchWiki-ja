@@ -4,109 +4,121 @@
 </div>
 <div style="text-align: center;">
 
-Nyarch Assistant is Nyarch Linux official <b>AI Waifu Assistant</b>.
+Nyarch Assistant は Nyarch Linux の公式 <b>AI Waifu Assistantです</b>。
 </div>
 
 ![screenshot](https://raw.githubusercontent.com/NyarchLinux/NyarchAssistant/refs/heads/master/screenshots/1b.png)
 
-## Nyarch Assistant and Newelle
+## Nyarch Assistant と Newelle
 
-Nyarch Assistant is a fork of [Newelle](https://github.com/qwersyk/Newelle). 
+Nyarch Assistant は [Newelle](https://github.com/qwersyk/Newelle) のフォークです。
 
-**Newelle** is available on [Flathub](https://flathub.org/apps/io.github.qwersyk.Newelle) and is supposed to be an **AI chatbot for Linux users in general**, while **Nyarch Assistant** has some **anime and Nyarch Linux-related things** that do not make sense for normal users.
+Newelle は [Flathub](https://flathub.org/apps/io.github.qwersyk.Newelle) で利用可能で、一般的な Linux ユーザー向けの AI チャットボットとされていますが、Nyarch Assistant には一般ユーザーには意味を成さないアニメや Nyarch Linux 関連の要素がいくつかあります。
 
-Newelle and Nyarch Linux will **always** be up to date with each other and Newelle extensions will always be compatible with Nyarch Assistant extensions.
+Newelle と Nyarch Linux は常に相互に最新の状態であり、Newelle 拡張機能は常に Nyarch Assistant 拡張機能と互換性があります。
 
-## Features
-- **Your dream waifu, at your command**: Choose from a vast library of TTS voices and Live2D or LivePNG models to create the perfect virtual companion.
+## 機能
 
-- **Terminal Command Execution**: Execute terminal commands directly through the AI.
+- **あなたの夢のワイフがあなたの指示に従う**: 豊富なTTS音声ライブラリとLive2DまたはLivePNGモデルから選択し、完璧なバーチャルコンパニオンを作成してください。
 
-- **Advanced Customization**: Tailor the application with a wide range of settings.
+- **ターミナルコマンド実行**: AIを通じてターミナルコマンドを直接実行します。
 
-- **Flexible Model Support**: Choose from multiple AI models to fit your specific needs.
+- **高度なカスタマイズ**: 幅広い設定でアプリケーションをカスタマイズできます。
 
-- **Extensions support**: Add custom LLM, TTS, STT, Avatars, prompts and additional functionalities with minimal python programming
+- **柔軟なモデルサポート**: 複数のAIモデルから選択し、特定のニーズに合わせることができます。
 
-- **Profile Support**: Quickly switch totally different settings using our profile functionality
+- **拡張機能サポート**: カスタムLLM、TTS、STT、アバター、プロンプト、および追加機能を最小限のPythonプログラミングで追加します
 
-## Suggested LLM and models
-You are totally free to choose what models and what providers to use Nyarch Assistant with.
-By default, Nyarch Assistant uses our Demo API (limited at 10req/day), that uses `gemini-flash-2.0` for anything else. These API are **just to showcase Nyarch Assistant**, you are supposed to **use another provider with API Key** or use a local model with **Ollama** or our builtin loader. 
+- **プロフィールサポート**: プロフィール機能を使用して、全く異なる設定に素早く切り替えることができます
+  
+## 推奨されるLLMとモデル
 
-If the provider you want is not supported, you can [make your own extension](https://github.com/qwersyk/Newelle/wiki/Developing-extensions) or [check the existing extensions](https://github.com/qwersyk/Newelle/wiki/User-guide-to-Extensions#finding-extensions).
+Nyarch Assistant を使用するモデルやプロバイダーは、自由に選択できます。
 
-- For general purposes, general knowledge, coding and role playing, `Llama3.1-70B+` models are suggested.
-- If you do more programming/IT things, `qwen3-8b`+, `deepseek-r1`, `deepseek-v3`, `Mixtral8x22B`, `claude-3.5-sonnet` models (of basically any size) are preferred.
-- For roleplay only, you might like `qwen3-4b`+, `mythomax-l2-13b`, `llama3.1-7B`, `gemma3` models or `wizardlm-2-8x22b`.
+デフォルトでは、Nyarch Assistant は当社のデモ API（1日 10req に制限）を使用し、他のすべてには `gemini-flash-2.0` を使用します。これらのAPIはNyarch Assistantを紹介するだけのものであり、APIキーを持つ別のプロバイダーを使用するか、Ollamaまたは当社の組み込みローダーを使用したローカルモデルを使用する必要があります。
 
-**For more information on how to setup different providers, read** [Newelle's user guide to LLMs](https://github.com/qwersyk/Newelle/wiki/User-guide-to-the-available-LLMs)
-## Nyarch Assistant settings suggestions
-### Maximum Privacy
-With these settings, everything will be run locally and no data about you will be sent anywhere.
+ご希望のプロバイダーがサポートされていない場合は、[拡張機能を作成](https://github.com/qwersyk/Newelle/wiki/Developing-extensions) または[既存の拡張機能を確認](https://github.com/qwersyk/Newelle/wiki/User-guide-to-Extensions#finding-extensions) をご利用いただけます。
 
-Since these computations require a good amount of resources, a good GPU is suggested for good performances.
-#### Local LLMs
-Two offline models providers are supported: GPT4All (or "Local Model") and Ollama (Suggested). For instructions on how to setup them, read [Newelle Wiki - Local Models](https://github.com/qwersyk/Newelle/wiki/User-guide-to-the-available-LLMs#local-models-1).
-**Using a model with Ollama is suggested as it has more fatures and generally better performances.**
-For suggested models, read [Suggested LLM and models](#suggested-llm-and-models)
+- 一般的な目的、一般的な知識、コーディング、ロールプレイのために、`Llama3.1-70B+`モデルが推奨されます。
+- プログラミングやITの作業が多い場合は、`qwen3-8b`+、`deepseek-r1`、`deepseek-v3`、`Mixtral8x22B`、`claude-3.5-sonnet` モデル（基本的に任意のサイズ）が推奨されます。
+- ロールプレイのみの場合、`qwen3-4b`+、`mythomax-l2-13b`、`llama3.1-7B`、`gemma3`モデル、または`wizardlm-2-8x22b` をご好みになるかもしれません。
+
+異なるプロバイダーの設定方法の詳細については、[Newelle の LLM ユーザーガイド](https://github.com/qwersyk/Newelle/wiki/User-guide-to-the-available-LLMs) をご覧ください。
+## Nyarch Assistant 設定の提案
+### 最大限のプライバシー
+これらの設定では、すべてがローカルで実行され、あなたに関するデータはどこにも送信されません。
+
+これらの計算には相当量のリソースが必要であるため、優れたパフォーマンスを発揮するには適切なGPUが推奨されます。
+
+#### ローカルLLM
+2つのオフラインモデルプロバイダーがサポートされています：GPT4All（または「ローカルモデル」）とOllama（推奨）。設定方法の手順については、[Newelle Wiki - Local Models](https://github.com/qwersyk/Newelle/wiki/User-guide-to-the-available-LLMs#local-models-1)をご覧ください。
+
+**Ollama を使用したモデルを使用することが推奨されます。これは、より多くのファチュアがあり、一般的に性能が優れているからです。**
+
+提案されたモデルについては、[推奨されるLLMとモデル](#推奨されるLLMとモデル) をご覧ください。
 #### TTS
-The best supported local TTS with natural sounding voices are `Vits` and `VoiceVox`. If you have a nice Nvidia GPU (RTX Series), TTS should be almost instant. In other cases, some loading time might be required.
-##### VoiceVox
-[VoiceVox](https://voicevox.hiroshiba.jp/) is an open source TTS engine really natural sounding for Japanese.
 
-Since it only supports Japanese, if you don't know Japanese, you can decide to enable translations,enable the Translator program in Avatar and select Japanese as the translation language. 
+自然な音声でサポートされているローカルTTSは、`Vits` と `VoiceVox` が最もサポートされています。もしNvidiaの良いGPU（RTXシリーズ）をお持ちであれば、TTSはほぼ瞬時に実行できるはずです。その他の場合、ロード時間が必要になることがあります。
+
+##### VoiceVox
+
+[VoiceVox](https://voicevox.hiroshiba.jp/) は、オープンソースのTTSエンジンで、日本語にとって非常に自然な音です。
+
+日本語のみ対応しているため、日本語が分からない場合は、翻訳を有効にし、Avatarで翻訳プログラムを有効にし、翻訳言語として日本語を選択できます。(このWikiを日本語で読んでる人はほとんどが日本人だろうから、多分ここは必要ないけどね笑)
 
 ![immagine](https://imgbed.bil-misaka.eu.org/file/nyarch/1771345969461_image.png)
 
-###### Installing and using VoiceVox
-If you have Smart prompts enabled, you can ask Arch-chan to guide you through these steps! In case you don't trust her yapping, here are the full instructions.
+###### VoiceVox のインストールと使用
 
-**Step 1**: Install docker
+Smartプロンプトが有効になっている場合、Arch-chanにこれらの手順を案内してもらうことができます！もし彼女のお喋りを信用できない場合は、この指示に従ってください。
+
+**Step 1**: Dockerのインストール
 ```bash
 sudo pacman -S docker
 sudo systemctl enable --now docker
 ```
 
-If you have a **Nvidia GPU** and you want to use it, also install `nvidia-container-toolkit`. Also, **Nvidia proprietary drivers must be installed.**
+もし **Nvidia GPU** をお持ちで、使用したい場合は、`nvidia-container-toolkit` もインストールしてください。また、**Nvidia の専用ドライバーをインストールする必要があります。**
 ```bash
 sudo pacman -S nvidia-container-toolkit
 sudo systemctl restart docker.service
 ```
-**Step 2**: Install the docker container
+**Step 2**: Docker コンテナのインストール
 
-If you want to use **CPU ONLY**:
+**CPUのみ** を使用したい場合:
 ```bash
 sudo docker pull voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 ```
 
-If you want to use **Nvidia GPU**:
+**Nvidia GPU** を使用したい場合:
 ```bash
 sudo docker pull voicevox/voicevox_engine:nvidia-ubuntu20.04-latest
 ```
-**Step 3**: Start the containter
+**Step 3**: コンテナを開始する
 
-If on **cpu**:
+**CPU上** の場合：
 ```bash
 sudo docker run --rm -it -p '127.0.0.1:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 ```
 
-If on **gpu**:
+**GPU上** の場合：
 ```bash
 sudo docker run --rm --gpus all -p '127.0.0.1:50021:50021' voicevox/voicevox_engine:nvidia-ubuntu20.04-latest
 ```
 
-**You will have to start the container every time you want to use voicevox**
+**Voicevox を使用したいときは、毎回コンテナを起動しなければなりません。**
 
-**Step 4**: Configure it on Nyarch Assistant settings
+**Step 4**: Nyarch Assistant の設定を構成する
 ![immagine](https://github.com/user-attachments/assets/426e73d7-b2ca-4f05-9674-fd43d06ff647)
 
-###### Effect
+###### 効果
 
 <video src="https://imgbed.bil-misaka.eu.org/file/nyarch/1771345775402_voicevoxtest.mp4" controls=true></video>
 
-Put `http://localhost:50021` as endpoint (or the ip/port you chosen if you host it somewhere else).
-Then, close and reopen the settings to reload the voices and then choose your favourite voice.
+エンドポイントとして `http://localhost:50021` を設定してください（別の場所でホストする場合は、選択した IP/ポートにしてください）。
 
-##### Voice Cloning
-You can use [this extension](https://github.com/FrancescoCaracciolo/Newelle-Voice-Cloning) to do voice cloning with TTS.
+次に、設定を閉じて再度開き、音声を再読み込みし、好きな音声を選択してください。
+
+##### 音声クローン作成
+
+[この拡張機能](https://github.com/FrancescoCaracciolo/Newelle-Voice-Cloning) を使用して、TTSで音声クローンを実行できます。
