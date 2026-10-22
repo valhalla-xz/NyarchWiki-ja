@@ -37,7 +37,7 @@ Nyarch Assistant を使用するモデルやプロバイダーは、自由に選
 
 デフォルトでは、Nyarch Assistant は当社のデモ API（1日 10req に制限）を使用し、他のすべてには `gemini-flash-2.0` を使用します。これらのAPIはNyarch Assistantを紹介するだけのものであり、APIキーを持つ別のプロバイダーを使用するか、Ollamaまたは当社の組み込みローダーを使用したローカルモデルを使用する必要があります。
 
-ご希望のプロバイダーがサポートされていない場合は、[拡張機能を作成](https://github.com/qwersyk/Newelle/wiki/Developing-extensions) または[既存の拡張機能を確認](https://github.com/qwersyk/Newelle/wiki/User-guide-to-Extensions#finding-extensions) をご利用いただけます。
+ご希望のプロバイダーがサポートされていない場合は、[拡張機能を作成](https://github.com/qwersyk/Newelle/wiki/Developing-extensions) または[既存の拡張機能を確認](https://github.com/qwersyk/Newelle/wiki/User-guide-to-Extensions#finding-extensions)を行ってください。
 
 - 一般的な目的、一般的な知識、コーディング、ロールプレイのために、`Llama3.1-70B+`モデルが推奨されます。
 - プログラミングやITの作業が多い場合は、`qwen3-8b`+、`deepseek-r1`、`deepseek-v3`、`Mixtral8x22B`、`claude-3.5-sonnet` モデル（基本的に任意のサイズ）が推奨されます。
