@@ -1,16 +1,18 @@
-# Nyarch Applications
-This article contains the list of Nyarch Applications.
-Some applications are only available for some Nyarch Versions.
+# Nyarch アプリケーション
+この記事にはNyarchアプリケーションの一覧が含まれています。
+
+一部のアプリケーションは、Nyarch の一部のバージョンでのみ利用可能です。
 
 ## Catgirl Downloader
-Catgirl downloader downloads random images of catgirls from multiple sources.
+Catgirl Downloader は、複数のソースからランダムなキャットガールの画像をダウンロードします。
 
-Features:
-- Auto Reload
+特徴：
+
+- 自動リロード
 - Nya
-- Multiple sources
+- 複数の情報源
 
-Supports the following sources:
+以下のソースをサポートしています：
 
 - [nekos.moe](https://nekos.moe)
 - [waifu.im](https://waifu.im)
@@ -33,8 +35,7 @@ Supports the following sources:
 - **Toolkit**: `QT + Kirigami (PySide6)`
 
 ## Nyarch Tour
-Nyarch Tour launches automatically after first Nyarch installation. Its purpose is to guide the user to Nyarch features and how to use its desktop.
-
+Nyarch Tour は、最初のNyarchインストール後に自動的に起動します。その目的は、ユーザーにNyarchの機能とデスクトップの使い方を案内することです。
 ##### Gnome Version
 
 - **App ID**: `moe.nyarchlinux.tour`
