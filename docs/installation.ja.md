@@ -4,7 +4,7 @@ Linux ディストリビューションをすでにインストールしてい�
 
 それでもインストールしたい場合、このメソッドでNyarch をインストール出来ます。
 
-1.[物理マシン](#installing-nyarch-on-your-computer)
+1.[物理マシン](#あなたのコンピュータにNyarchをインストールする)
 2.[仮想マシン](#install-nyarch-on-a-virtual-machine)
 3.[既存の Linux ディストリビューションに追加](/nyarcher)
 
