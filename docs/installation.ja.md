@@ -1,13 +1,14 @@
-If you have already installed a Linux Distribution, the installation procedure for Nyarch Linux is the same.
+Linux ディストリビューションをすでにインストールしている場合、Nyarch Linux のインストール手順は基本的に同じです。
 
-If you have not already installed a Linux Distribution, please consider installing another distribution.
-If you still want to go on, then you can decide to install Nyarch on:
+まだLinuxディストリビューションをインストールしていない場合は、別のディストリビューションのインストールをご検討ください。
 
-1. [Your Computer](#installing-nyarch-on-your-computer)
-2. [Virtual Machine](#install-nyarch-on-a-virtual-machine)
-3. [On an existing Linux Distro](/nyarcher)
+それでもインストールしたい場合、このメソッドでNyarch をインストール出来ます。
 
-## Installing Nyarch on your Computer
+1.[物理マシン](#installing-nyarch-on-your-computer)
+2.[仮想マシン](#install-nyarch-on-a-virtual-machine)
+3.[既存の Linux ディストリビューションに追加](/nyarcher)
+
+## あなたのコンピュータにNyarchをインストールする
 
 ### Prerequisites
 - A computer that respects the [Resource Requirements](https://nyarchlinux.moe/#requirements)
