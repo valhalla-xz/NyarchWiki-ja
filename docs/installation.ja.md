@@ -73,7 +73,7 @@ Nyarch のインストールは、次の方法で決定できます。
 
 ![Immagine](https://github.com/user-attachments/assets/ee2077d3-9ff8-4375-bf31-2c7234855bf2)
 
-### ライブUSBの起動
+### Live USBの起動
 1.USBドライブをデバイスに接続してください。
 
 2.お使いのデバイスの BIOS/UEFI ユーティリティへのアクセス。アクセス手順はお使いのデバイスに依存します。
