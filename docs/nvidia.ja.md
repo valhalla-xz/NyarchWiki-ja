@@ -1,16 +1,18 @@
-# Nvidia Support
-Starting from version `24.11.1`, Nyarch Linux supports again a Nyarch version with **nvidia proprietary drivers preinstalled**. 
+# Nvidia サポート
+バージョン `24.11.1` から、Nyarch Linux は再び **NVIDIA用の独自ドライバ** を備えた Nyarch バージョンをサポートしています。
 
-**Note:** Nvidia version does not support RTX5000 GPUs. You will have to install the `nvidia-open` driver [manually](install_nvidia_drivers.md) on the Normal ISO. 
+**Note:** Nvidia バージョンは RTX5000 GPU をサポートしていません。通常の ISO に `nvidia-open` ドライバを [manually](install_nvidia_drivers.md) でインストールする必要があります。
 
-It will also install [envycontrol](https://github.com/bayasdev/envycontrol) to manage hybrid graphics, with a simple toggle in Gnome.
+ハイブリッドグラフィックスを管理するために、[envycontrol](https://github.com/bayasdev/envycontrol) をインストールし、Gnome のシンプルなトグルスイッチで管理します。
 
-**Note:** If you are installing Nyarch on a virtual machine, use the normal Nyarch ISO.
+**Note:** 仮想マシンに Nyarch をインストールする場合は、通常の Nyarch ISO を使用してください。
 
-## Supported GPUS
-Nvidia ISO supports every GPU still supported by the `nvidia` driver, so `NV110+` up to (`NV190/ADXXX`)(basically GeForce 750+ GPUs until RTX 5000 (not included), you can check the list [here](https://nouveau.freedesktop.org/CodeNames.html)).
+## サポートされているGPU
 
-If you have a not supported nvidia GPU, you might have to install the drivers manually.
+Nvidia ISO は `nvidia` ドライバでまだサポートされているすべての GPU をサポートしているため、`NV110+` は (`NV190/ADXXX`) までです（基本的に GeForce 750 以上の GPU は RTX 5000 まで（RTX5000シリーズは含まれません）、リストは [こちら](https://nouveau.freedesktop.org/CodeNames.html) で確認できます）。
 
-## Manual driver installation
-Just follow [this](https://github.com/korvahannu/arch-nvidia-drivers-installation-guide).
+サポートされていないNVIDIA GPUをお持ちの場合、ドライバーを手動でインストールする必要があるかもしれません。
+
+## 手動ドライバーのインストール
+
+ただ、[このガイド](https://github.com/korvahannu/arch-nvidia-drivers-installation-guide) に従ってください。
