@@ -1,65 +1,64 @@
 # Nyarch Wiki
 
-The Nyarch Linux wiki is designed to be a **straightforward** and **accessible** resource for users of all skill levels, particularly those new to Nyarch Linux.
-Unlike the comprehensive [Arch Wiki](https://wiki.archlinux.org), the Nyarch Linux Wiki focuses on providing **simpler, easy-to-understand information on various topics**. Additionally, it offers Nyarch-specific **guidance and recommendations** to help you enhance your experience with Nyarch Linux.
+Nyarch Linux のウィキは、すべてのスキルレベルのユーザー、特にNyarch Linuxが初めてのユーザーにとって、**簡潔・率直・明確**かつ**使いやすい**リソースになるよう設計されています。
+包括的な[Arch Wiki](https://wiki.archlinux.org)とは異なり、Nyarch Linux Wikiは、さまざまなトピックに関するよりシンプルで分かりやすい情報の提供に重点を置いています。さらに、Nyarch Linuxの体験を向上させるために、Nyarch 固有の**ガイダンスと推奨事項**を提供しています。
 
-## What goes in this wiki
+## このWikiには何が含まれていますか？
 
-- Simple tutorials and suggestions for beginners
-- Simplified explanations about Linux and Arch Linux (easier than the Arch Wiki, but also provide links to it)
-- Nyarch-specific usage suggestions
+- 初心者向けの簡単なチュートリアルと提案
+- Linux と Arch Linux に関する簡略化された説明（Arch Wiki よりも簡易ですが、リンクも提供しています）
+- Nyarch固有の使用提案
 
-## What does not go in this wiki
+## このWikiに含まれないものは何ですか？
 
-- Server things
-- Advanced or dangerous topics
-- Detailed technical explanations 
+- サーバーに関すること
+- 高度なトピックまたは危険なトピック
+- 詳細な技術的説明
 
-## Contributing to the Wiki
+## Wikiへの貢献
 
-You can contribute to the wiki on [GitHub](https://github.com/NyarchLinux/NyarchWiki).
-To contribute to the wiki, log in into your github account and visit our repository.
+[GitHub](https://github.com/NyarchLinux/NyarchWiki)のWikiに貢献できます。
+Wikiに貢献するには、GitHubアカウントにログインし、リポジトリをご訪問ください。
 
-The wiki is built using [Mkdocs](https://www.mkdocs.org/). 
+このWikiは[Mkdocs](https://www.mkdocs.org/)を使用して構築されています。
 
-All the content files are in `docs/`. To create a new page, create a markdown file in that folder and add it to the index in the `mkdocs.yml` file.
+すべてのコンテンツファイルは `docs/` にあります。新しいページを作成するには、そのフォルダーにMarkdownファイルを作成し、`mkdocs.yml` ファイルのインデックスに追加してください。
+Git を使用してコンピュータ上でリポジトリ全体をクローンするか、GitHub WebUI から直接Wikiを編集するかを選択できます。
 
-You can choose if to clone the whole repo on your computer using git, or to edit the wiki directly from GitHub WebUI.
-
-### Contributing to the Wiki from Github WebUI
-First of all, fork the wiki using the button on the top part of the github page.
+### Github WebUI から Wiki に貢献する
+まず、GitHubページの上部にあるボタンを使用してWikiをフォークしてください。
 
 ![immagine](https://github.com/user-attachments/assets/b8cffa4c-fe3f-470b-9163-65e328dfbf42)
 
-After the fork is created, you can edit the files directly from the Github WebUI by opening it and clicking on the pencil icon.
+フォークが作成されたら、GitHub WebUI を開き、鉛筆アイコンをクリックすることで、直接ファイルを編集できます。
 
 ![immagine](https://github.com/user-attachments/assets/71e34d22-4787-4db8-96dd-dab20b142938)
 
-Here you can make changes and preview them.
+こちらで変更を行い、プレビューすることができます。
 
 ![immagine](https://github.com/user-attachments/assets/e9bfdf92-3968-423a-a9d0-afff133e2acc)
 
-After you have done the appropriate changes, click on **commit changes** and write a summary of what you have modified.
+適切な変更を行った後、**commit changes** をクリックし、変更した内容の概要を書いてください。
 ![immagine](https://github.com/user-attachments/assets/2666e96f-75f9-4374-bd72-621e900c71c4)
 
-After that, click on "X commits ahead of..." to open a Pull Request
+その後、**X commits ahead of...** をクリックしてpull requestを開いてください。
 
 ![immagine](https://github.com/user-attachments/assets/b411b295-8dcf-4777-ac18-fd1c8ffdd772)
 
-Create a pull request and explain all of your changes. We will review your changes, ask for appropriate modifications and accept them.
-## Deploying the wiki
-Firstly, clone the wiki:
+pull requestを作成し、すべての変更点を説明してください。変更内容を確認し、適切な修正を求め、受け入れます。
+## Wikiのデプロイ
+まず、Wikiをクローンします。
 ```bash
 git clone https://github.com/NyarchLinux/NyarchWiki
 ```
 
-Install mkdocs and mkdocs-material in a python venv
+Python venv に mkdocs と mkdocs-material をインストールします。
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install mkdocs mkdocs-material
 ```
-Launch the wiki:
+Wikiを起動します:
 ```bash
 mkdocs serve
 ```
