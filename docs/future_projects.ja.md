@@ -1,10 +1,10 @@
-# Future Projects
-This page contains future and in development projects with their details.  
+# 今後のプロジェクト
+このページには、将来および開発中のプロジェクトとその詳細が含まれています。
 
-If you want to contribute to Nyarch Development, you can propose new projects, or contributing to the projects listed here. For contribution you can contact us on [Discord](https://discord.gg/xuw6BNXXE7) or [GitHub](https://github.com/NyarchLinux/NyarchLinux).
+Nyarch Development に貢献したい場合は、新しいプロジェクトを提案するか、ここに掲載されているプロジェクトに貢献することができます。ご協力をご希望の場合は、[Discord](https://discord.gg/xuw6BNXXE7) または [GitHub](https://github.com/NyarchLinux/NyarchLinux) にてご連絡ください。
 
-## Projects Overview
-| Project | Project Type | Development Status | Required Skills | Further information |
+## プロジェクト概要
+| プロジェクト | プロジェクトの種類 | 開発状況 | 必要なスキル | 詳細情報 |
 |---|---|---|---|---|
 | [KDE Plasma Spin](#kde-plasma-spin) | Desktop Spin | Development | Programming, Kirigami, ISO Building | Finished, released |
 | [Hyprland Spin](#hyprland-spin)  | Desktop Spin | Idea  | Programming, gtk-layer-shell, ISO Building | In begining phase.  |
@@ -15,15 +15,16 @@ If you want to contribute to Nyarch Development, you can propose new projects, o
 | [New Website](#new-website)  | Website | Development | HTML, CSS, JS  | New modern scrolling website for Nyarch. Currently assigned to Wawa. |
 | [Better AI Integration](#better-ai-intergation)  | Desktop Application | Idea (Rejected) | Programming, Python  | Add writing assistant, OCR etc... and integrate with Nyarch Assistant  |
 
-## Projects description
-In this section you can find some exploration about the projects and some software, library etc. that might accelerate development.
+## プロジェクトの説明
+このセクションでは、プロジェクトに関するいくつかの探求や、開発を加速させる可能性のあるソフトウェア、ライブラリ等をご覧いただけます。
+すべてのプロジェクトについて、これが一覧表示されます。
 
-For every project, this is listed:
+- **Goals**: プロジェクトが達成したいこと
+- **Requiremets**: プロジェクトがリリースされるために必要な要件です。`(secondary)` の要件は、リリース後のアップデートで実装できます。
+- **Exploration**: 開発や実験を加速させる可能性のあるソフトウェア...
+- **Tasks**: プロジェクト作成に必要なタスク
 
-- **Goals**: what the project wants to achieve
-- **Requiremets**: the requirements the project must have to be released. `(secondary)` requirements can be implemented with updates after release.
-- **Exploration**: software that might accelerate the development, experiments... 
-- **Tasks**: Required tasks to create the project 
+**この項の内容は無理に翻訳することにより本来の内容とは異なる内容になってしまう可能性があるため、英語版の原文となります。**
 
 ### KDE Plasma Spin
 #### Goals
