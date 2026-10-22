@@ -43,12 +43,14 @@ sudo pip3 install pywal
 ※このスクリプトは、上書きする前にほとんどの既存設定をバックアップし、/usr/bin/nyaofetch および /usr/bin/nekofetch ファイルを除外し、現在のユーザーの設定のみを編集します。
 <br />
 `nyarcher.sh` をダウンロードし、実行権限を追加してから実行してください。
+
 ```bash
 git clone https://github.com/NyarchLinux/Nyarcher.git
 cd Nyarcher
 chmod +x nyarcher.sh
 ./nyarcher.sh
 ```
+
 スクリプトは、設定を適用したいかどうかを尋ねます。安定した体験を得るために、**すべてに「はい」と答えることを強く推奨します**。
 
 ## 欠けているもの
@@ -56,7 +58,7 @@ chmod +x nyarcher.sh
 
 ほとんどすべてのものは、いくつかのコマンドを実行したり、いくつかのファイルを編集することで、任意のディストリビューションに統合できることに注意してください。
 
-- gnome-terminal-transparency はスクリプトによってインストールされていません。これは、透明性を実装した Gnome Terminal のバージョンです。Fedora ユーザーはデフォルトでそれを持っています。AUR（https://aur.archlinux.org/packages/gnome-terminal-transparency）からインストールできます。
+- gnome-terminal-transparency はスクリプトによってインストールされていません。これは、透明性を実装した Gnome Terminal のバージョンです。Fedora ユーザーはデフォルトでそれを持っています。[AUR]（https://aur.archlinux.org/packages/gnome-terminal-transparency）からインストールできます。
 - Webapp manager はデフォルトではインストールされていません。[AUR](https://aur.archlinux.org/packages/webapp-manager) からインストールできます。
 - plymouth（ブートアニメーション）はこのスクリプトでも、そのテーマでもインストールされていません。Plymouth のインストールは非常にディストリビューション固有です。[Arch LinuxのWikiページ](https://wiki.archlinux.org/title/plymouth)
 - 私たちが使用しているテーマは[こちら](https://github.com/NyarchLinux/NyarchLinux/tree/main/Gnome/usr/share/plymouth/themes)です。
