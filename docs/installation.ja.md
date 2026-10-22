@@ -20,15 +20,23 @@ Linux ディストリビューションをすでにインストールしてい�
 
 ### ブート可能なドライブを作成する
 1.ブート可能なドライブの作成に詳しい場合は、[Balena Etcher](https://etcher.balena.io/) または類似のプログラムをダウンロードしてください。
+
 2.USBドライブをコンピュータに挿入してください。
+
 3.
 ![Immagine](https://github.com/user-attachments/assets/0fe6d643-86ac-4f37-980d-ca82e74e5484)
 そして「Flash from file」をクリックしてください。
+
 4.以前にダウンロードしたNyarch LinuxのISOファイルを選択してください。
+  
 5.「Select Target」をクリックしてください
+
 ![Immagine](https://github.com/user-attachments/assets/c17a0629-e35f-4523-a21a-638bdbc0c4c3)
+
 そして、USBドライブを選んでください。**注意：正しいドライブを必ず選んでください。そうすると、保存されているファイルが失われてしまいます**。
+
 6.「Flash」をクリックして、完了するまでお待ちください。
+
 ![Immagine](https://github.com/user-attachments/assets/8a0f4a68-c36a-4f8f-968d-0b2c59d442dd)
 ### Ventoy を使用する ###
 
