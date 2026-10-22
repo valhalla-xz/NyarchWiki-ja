@@ -1,130 +1,127 @@
 Linux ディストリビューションをすでにインストールしている場合、Nyarch Linux のインストール手順は基本的に同じです。
 
-まだLinuxディストリビューションをインストールしていない場合は、別のディストリビューションのインストールをご検討ください。
+まだLinuxディストリビューションをインストールしていない場合、別のディストリビューションのインストールをご検討ください。
 
-それでもインストールしたい場合、このメソッドでNyarch をインストール出来ます。
+それでもNyarchを使用したい場合、この方法でNyarch をインストール出来ます。
 
-1.[物理マシン](#あなたのコンピュータにNyarchをインストールする)
+1.[物理マシン](#物理コンピュータ上にNyarchをインストールする)
 2.[仮想マシン](#install-nyarch-on-a-virtual-machine)
 3.[既存の Linux ディストリビューションに追加](/nyarcher)
 
-## あなたのコンピュータにNyarchをインストールする
+## 物理コンピュータ上にNyarchをインストールする
 
-### Prerequisites
-- A computer that respects the [Resource Requirements](https://nyarchlinux.moe/#requirements)
-- A USB Stick of at least 4GB capacity
-- Already a working computer (or android device if you use [Etchdroid](https://etchdroid.app/))
-- Downloaded the correct Nyarch ISO file. The ISO file can be found at [https://nyarchlinux.moe/](https://nyarchlinux.moe/#download). If you have a **Nvidia GPU**, check the support [here](https://wiki.nyarchlinux.moe/nvidia)
-- A backup of every important file you have on your computer
+### 前提条件
 
-### Creating a Bootable Drive
-1. Download [Balena Etcher](https://etcher.balena.io/) or any similar program if you are more familiar with them
-2. Insert the USB Drive in your computer
-3. Open Balena Etcher
+- [必要要件](https://nyarchlinux.moe/#requirements) を満たすコンピュータ
+- 容量が4GB以上のUSBメモリ
+- すでに動作しているコンピュータ（または[Etchdroid](https://etchdroid.app/) を使用している場合は Android デバイス）
+- 正しいNyarch ISOファイル。ISOファイルは[https://nyarchlinux.moe/](https://nyarchlinux.moe/#download)で見つけることができます。Nvidia GPU をお持ちの場合は、[サポート](https://wiki.nyarchlinux.moe/nvidia)をご確認ください。
+- コンピュータ上にあるすべての重要なファイルのバックアップ
 
-![immagine](https://github.com/user-attachments/assets/0fe6d643-86ac-4f37-980d-ca82e74e5484)
+### ブート可能なドライブを作成する
+1.ブート可能なドライブの作成に詳しい場合は、[Balena Etcher](https://etcher.balena.io/) または類似のプログラムをダウンロードしてください。
+2.USBドライブをコンピュータに挿入してください。
+3.
+![Immagine](https://github.com/user-attachments/assets/0fe6d643-86ac-4f37-980d-ca82e74e5484)
+そして「Flash from file」をクリックしてください。
+4.以前にダウンロードしたNyarch LinuxのISOファイルを選択してください。
+5.「Select Target」をクリックしてください
+![Immagine](https://github.com/user-attachments/assets/c17a0629-e35f-4523-a21a-638bdbc0c4c3)
+そして、USBドライブを選んでください。**注意：正しいドライブを必ず選んでください。そうすると、保存されているファイルが失われてしまいます**。
+6.「Flash」をクリックして、完了するまでお待ちください。
+![Immagine](https://github.com/user-attachments/assets/8a0f4a68-c36a-4f8f-968d-0b2c59d442dd)
+### Ventoy を使用する ###
 
-And click on "Flash from file". 
-4. Select Nyarch Linux ISO file you have downloaded before.
-5. Click on select Target
-![immagine](https://github.com/user-attachments/assets/c17a0629-e35f-4523-a21a-638bdbc0c4c3)
+公式のVentoy手順に従ってVentoyブート可能なドライブを作成し、Nyarch ISOイメージをモバイルcatドライブに配置し、起動したVentoyメニューでISOイメージを選択してください。
 
-And choose your USB Drive **attention: be sure to choose the right drive since you will lose any file you have on it**.
-6. Click "Flash" and wait for it to finish. 
-![immagine](https://github.com/user-attachments/assets/8a0f4a68-c36a-4f8f-968d-0b2c59d442dd)
+### インストール方法を選択する
 
-### Using Ventoy ###
+Nyarch のインストールは、次の方法で決定できます。
+1.ディスク全体を削除し、Nyarch をインストールする
+2.Nyarch を Windows と同時に同じディスクにインストールする
+3.別のディスクに Nyarch を Windows と一緒にインストールする
+1または3を行いたい場合は、次のセクションへ進んでください。
 
-Follow the official Ventoy instructions to create a Ventoy bootable drive, place the Nyarch ISO image on your mobile cat drive, then select the ISO image in the booted Ventoy menu.
+2 を実行したい場合は、**Windows パーティションの縮小** をしなければなりません。
+##### Windows パーティションの縮小
+1.Windowsを起動します。
+2.スタートボタンで右クリックします。
+3.「新しいパーティションの作成とハードディスクのフォーマット」の下にある `ディスクの管理` ユーティリティを起動してください。
+4.プライマリ Windows パーティションを右クリックし、[ボリュームの縮小] を選択してください。
+![Immagine](https://github.com/user-attachments/assets/01cb1a7c-7881-4d41-848d-fbf52240124f)
+5.パーティションのサイズを少なくとも30GB縮小してください。これがLinuxに残されたスペースです。
+![Immagine](https://github.com/user-attachments/assets/ee2077d3-9ff8-4375-bf31-2c7234855bf2)
 
-### Choosing the installation method
-You can decide to install Nyarch in these ways:
-1. Deleting the whole disk and install Nyarch
-2. Install Nyarch alongside Windows in the same disk
-3. Install Nyarch alongside Windows in another disk
-If you want to do 1 or 3, then skip to the next section.
-If you want to do 2, then you have to **shrink your Windows partition**.
-##### Shrinking Windows partition
-1. Boot windows
-2. Cry
-3. Launch the `Disk Management` utility found under Create and format hard disk partitions.
-4. Right-click the primary Windows partition and select Shrink Volume...
-![immagine](https://github.com/user-attachments/assets/01cb1a7c-7881-4d41-848d-fbf52240124f)
-5. Shrink the size of the partition by at least 30GB. This will be the space left to Linux
-![immagine](https://github.com/user-attachments/assets/ee2077d3-9ff8-4375-bf31-2c7234855bf2)
+### ライブUSBの起動
+1.USBドライブをデバイスに接続してください。
+2.お使いのデバイスの BIOS/UEFI ユーティリティへのアクセス。アクセス手順はお使いのデバイスに依存します。
+BIOSへのアクセス方法が分からない場合は、デバイスの起動時にFキーを連打し、*ヤオヨロ〜！*と叫んで、正しいものが届くまで操作してください。
+3.セキュアブートを無効にする
+4.ブート順序の設定を見つけ、USBドライブを最初に配置してください。代わりに、ブートメニューにアクセスできる場合は、そこから起動してください。
+5.保存して終了
+6.Nyarch Liveがブートされるでしょう。もしブートされなかった場合は、最初にUSBを実際に設定したか確認し、Nyarchサポートチャンネル（またはLinuxコミュニティのサポート）で助けを求めてください。
 
-### Booting the Live USB
-1. Connect the USB drive to your device
-2. Access to the BIOS/UEFI Utility of your device. The procedure to access depends on your device.
-  If you can't figure out how to access your BIOS, Spam F keys shouting *Hora Hora Hora* at the boot of your device till you get the right one.
-3. Disable Secure Boot
-4. Find the setting for the boot order and put your USB Drive in the first place. Alternatively, if you have access to the boot menu, launch it from there.
-5. Save and exit
-6. Hope that Nyarch Live boots. If it doesn't, check that you have actually set your USB at first place and then cry for help in Nyarch support channels (or any Linux community support).
+### Nyarch Live
+あなたはNyarchを無事に起動出来たでしょう。
+無事に起動出来た場合、現在、**Live Environment** にいます。
 
-### Nyarch Live Environment
-You have *hopefully* succesfully booted Nyarch. 
-Now you are in the **Live Environment**. 
+Linux ディストリビューションをインストールする際、Liveは「購入前に試す」体験のようなものです。
 
-When you're installing a Linux distribution, a live environment is like a "try before you buy" experience.
-It's a **temporary operating system** that you can run from a USB drive or CD, without actually installing it on your computer's hard drive. 
+これは、USBドライブまたはCDから実行できる**一時的なオペレーティングシステム**で、実際にコンピュータのハードドライブにインストールせずに使用できます。
 
-This way, **you can test how the Linux distribution works**, specially **Wifi, hardware device, sound etc...**. You can also explore some of Nyarch features, however consider that **the performances are worst compared to the installed system** due to USB drive I/O Speeds.
+このLiveで **Linuxディストリビューションの動作をテストできます。** 特に、**Wi‐Fi、ハードウェアデバイス、サウンドなどです。** Nyarch の機能のいくつかもご覧いただけますが、USB ドライブの I/O 速度により、**インストールされたシステムと比較して、パフォーマンスが最悪であること** を考慮してください。
 
-In case you need to do an operation that requires the user password to be put while you are in the live environment, the password is `live`.
+Liveにいる間にユーザーパスワードの入力が必要な操作を行う必要がある場合、パスワードは `live` です。
 #### Nyarch Installer
-The installer will be launched automatically at the start of the system.
+インストーラーはシステムの起動時に自動的に起動されます。
 
 ![immagine](https://github.com/user-attachments/assets/d294db49-5fd7-4844-9083-59790998dcc7)
 
-It will then prompt you your localization settings. Compile them according to your preferences.
+それにより、言語設定が促されます。ご希望に合わせて言語を設定してください。
 
-##### Partitioning
-**Note**: Be careful in this part since an error might cause data loss!
+##### パーティション分割
+**Note**: この部分では、エラーがデータ損失の原因となる可能性があるため、注意してください。
 ![immagine](https://github.com/user-attachments/assets/dea978b0-b0fd-4d23-b05d-e6a4e59c6f94)
 
-Here you can choose multiple things:
-- If to erase the entire disk and install Nyarch on it. You can choose a different disk in the upper part of the window.
+ここでは複数の項目を選択できます。
 
-- If to replace a partition with Nyarch Install (not shown in the image)
+- ディスク全体を消去し、Nyarch をインストールする場合。ウィンドウの上部で別のディスクを選択できます。
+- パーティションを Nyarch Install に置き換える場合（画像には表示されていません）
+- 画像に示されていない別のOSと併用してNyarchをインストールする場合
+- パーティションを手動で選択する（自分が何をしているか分かっている場合）
 
-- If to install Nyarch alongside another OS (not shown in the image)
+また、以下のオプションを選択することもできます。
 
-- To manually choose your partitions (If you know what you are doing)
+- **Swap**: ディスクに保存されている余分なRAMのようなものです。それを有効にすることが強く推奨されます。
 
-You can also choose:
+- **Filesystem**: これらの中からファイルシステムを選択できます。
 
-- **Swap**: it's like extra ram that is stored on your disk. It is strongly suggested to enable it.
+- **ext4**: は Linux ディストリビューションの標準です。多くの場合、より速く、より安定していると考えられています。
 
-- **Filesystem**: You can choose you filesystem between these
+- btrfs: インスタントスナップショットをサポートし、データの破損や冗長性に対する保護を強化します。場合によってはやや遅くなります（Intelの場合選択しないでください。問題は [Issues#62](https://github.com/NyarchLinux/NyarchLinux/issues/62)に明記されています。）。
+  
+- xfs: 何をしているか分かっているまでインストールしないでください
+  
+##### インストールを完了させる
 
-  - **ext4**: is the standard for Linux distribution. It's faster in many cases and is considered to be more stable.
+名前を入力し、インストールが完了するのを待ってから、再起動してください！
 
-  - **btrfs**: supports **instant snapshots**, has more protection against data corruption and redundancy. a bit slower in some cases（Intel dont chose，the issue is repoetd in [Issues＃62](https://github.com/NyarchLinux/NyarchLinux/issues/62)）.
+![Immagine](https://github.com/user-attachments/assets/9a9b4116-dc34-4b18-9b9f-b85b40f27ed6)
+![Immagine](https://github.com/user-attachments/assets/6115a3d3-e75c-4028-b71f-3b0a35109f4b)
 
-  - xfs: don't install it unless you know what you are doing
+## 仮想マシンにNyarchをインストールする
 
-##### Finishing the install
-Choose your name, and wait for the install to finish, and reboot!
+- Nyarch のインストールにおすすめの VM ソフトウェア：VMWare Workstation、QEMU、Gnome Boxes
+  
+- Nyarch: VirtualBox のインストールは推奨されません（3D 加速が不安定なため）
 
-![immagine](https://github.com/user-attachments/assets/9a9b4116-dc34-4b18-9b9f-b85b40f27ed6)
+Nyarchはユーザー体験を向上させるためにアニメーションを多用しており、**VMで3Dアクセラレーションを有効化することが強く推奨されています**。有効化しないと、極めてひどいアニメーションになるでしょう。兄弟、ブルーロック シーズン2よりひどいアニメーションは見たくないんだ。信じてくれ。
 
-![immagine](https://github.com/user-attachments/assets/6115a3d3-e75c-4028-b71f-3b0a35109f4b)
+これらの仕様でVMを作成してください。
 
-## Install Nyarch on a Virtual Machine
-- Suggested VM Softwares to install Nyarch: VMWare Workstation, QEMU, Gnome Boxes
+- CPU: できるだけ多く、多ければ多いほど良い
+- メモリ：最低3GB、フルイドシステムでは6GBを推奨
+- ストレージ：OSのインストールに必要な最低30GB
+- UEFI/BIOS はどちらもサポートされています
 
-- Not suggested VM Softwares to install Nyarch: VirtualBox (because of the bad 3D acceleration)
-
-Nyarch makes a lot of use of animations to enhance the user experience, so **enable 3D acceleration in the VM**. Otherwise it will lag as fuck. Bro you don't want to see worse animations than Blue Lock S2, trust me.
-Create a VM with these specifications:
-
-- CPU: As much as you can/prefer
-
-- Memory: at least 3GB, suggested 6GB for a fluid system
-
-- Storage: 30GB minimum for installing the OS
-
-- UEFI/BIOS are both supported
-
-After you created and booted the VM, skip to [Nyarch Live Environment](#nyarch-live-environment)
+VM を作成し起動したら、[Nyarch Live](#nyarch-live) にスキップしてください。
