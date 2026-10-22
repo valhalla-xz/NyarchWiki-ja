@@ -1,3 +1,6 @@
+# 日本語訳について
+現在工事中です。まだPull request出来る段階にはありません。
+
 # Nyarch Wiki
 The Nyarch Linux wiki is designed to be a **straightforward** and **accessible** resource for users of all skill levels, particularly those new to Nyarch Linux.
 Unlike the comprehensive [Arch Wiki](https://wiki.archlinux.org), the Nyarch Linux Wiki focuses on providing **simpler, easy-to-understand information on various topics**. Additionally, it offers Nyarch-specific **guidance and recommendations** to help you enhance your experience with Nyarch Linux.
