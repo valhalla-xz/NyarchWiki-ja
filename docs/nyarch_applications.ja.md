@@ -18,7 +18,7 @@ Catgirl Downloader は、複数のソースからランダムなキャットガ�
 - [waifu.im](https://waifu.im)
 - [danbooru](https://danbooru.donmai.us)
 
-##### Gnome Version
+### Gnome Version
 
 - **App ID**: `moe.nyarchlinux.catgirldownloader`
 - **Launch Command**: `flatpak run moe.nyarchlinux.catgirldownloader`
@@ -26,7 +26,7 @@ Catgirl Downloader は、複数のソースからランダムなキャットガ�
 - **Language**: `Python`
 - **Toolkit**: `GTK4 + Adwaita`
 
-##### KDE Version
+### KDE Version
 
 - **App ID**: `moe.nyarchlinux.catgirldownloaderqt`
 - **Launch Command**: `catgirldownloaderqt`
@@ -36,7 +36,7 @@ Catgirl Downloader は、複数のソースからランダムなキャットガ�
 
 ## Nyarch Tour
 Nyarch Tour は、最初のNyarchインストール後に自動的に起動します。その目的は、ユーザーにNyarchの機能とデスクトップの使い方を案内することです。
-##### Gnome Version
+### Gnome Version
 
 - **App ID**: `moe.nyarchlinux.tour`
 - **Launch Command**: `flatpak run moe.nyarchlinux.tour`
@@ -45,7 +45,7 @@ Nyarch Tour は、最初のNyarchインストール後に自動的に起動し�
 - **Toolkit**: `GTK4 + Adwaita`
 
 
-##### KDE Version
+### KDE Version
 
 - **App ID**: `moe.nyarchlinux.tourqt`
 - **Launch Command**: `nyarchtourqt`
